@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import { useStore } from 'redux/store';
 import useLocale from 'hooks/useLocale';
 import useForceSSL from 'hooks/useForceSSL';
-import { messages } from 'lib/lang';
 import 'styles/variables.css';
 import 'styles/bootstrap-grid.css';
 import 'styles/index.css';
@@ -14,7 +13,7 @@ import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 
 const Intl = ({ children }) => {
-  const [locale] = useLocale();
+  const { locale, messages } = useLocale();
 
   const Wrapper = ({ children }) => <span className={locale}>{children}</span>;
 
@@ -39,7 +38,6 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="16x16" href={`${basePath}/favicon-16x16.png`} />
         <link rel="manifest" href={`${basePath}/site.webmanifest`} />
         <link rel="mask-icon" href={`${basePath}/safari-pinned-tab.svg`} color="#5bbad5" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
