@@ -1,3 +1,7 @@
+# Deprecation notice
+
+This example is now deprecated. Please use the one maintained in the [starters repository](https://github.com/railwayapp/starters/tree/master/examples/umami) instead.
+
 # Umami example
 
 This example deploys self-hosted version of [Umami](https://umami.is/). Internally it uses a PostgreSQL database to store the collected data.
