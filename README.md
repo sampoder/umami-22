@@ -1,6 +1,6 @@
 # Deprecation notice
 
-This example is now deprecated. Please use the one maintained in the [starters repository](https://github.com/railwayapp/starters/tree/master/examples/umami) instead.
+This example is now deprecated. Please use the one maintained in the [starters repository](https://github.com/railwayapp/starters/tree/master/examples/umami) instead. Oh no!
 
 # Umami example
 
